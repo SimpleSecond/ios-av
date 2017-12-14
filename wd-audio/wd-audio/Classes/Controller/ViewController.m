@@ -34,7 +34,7 @@
 
 #pragma mark - 播放器
 @property (nonatomic, strong) AVAudioPlayer *currentPlayer;
-
+//@property (nonatomic, strong) AVPlayer *currentPlayer;
 
 
 #pragma mark - 进度条时间
@@ -109,7 +109,7 @@
 
 - (IBAction)playPauseMusic:(id)sender {
     self.playPauseBtn.selected = !self.playPauseBtn.selected;
-    if (self.currentPlayer.playing) {
+    if (self.currentPlayer.isPlaying) {
         // 1. 暂停播放器
         [self.currentPlayer pause];
         // 2. 移除定时器

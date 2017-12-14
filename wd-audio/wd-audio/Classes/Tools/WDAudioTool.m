@@ -14,17 +14,52 @@
 static NSMutableDictionary *_soundIDs;
 static NSMutableDictionary *_players;
 
+static NSMutableDictionary *_itemList;
+static AVPlayer *_player;
+
 +(void)initialize
 {
     _soundIDs = [NSMutableDictionary dictionary];
     _players = [NSMutableDictionary dictionary];
-    
-    
+    _itemList = [NSMutableDictionary dictionary];
+    _player = [AVPlayer playerWithURL:[NSURL URLWithString:@""]];
 }
 
 
-#pragma mark - 类方法
+//#pragma mark - AVPlayer 使用方法
+//+ (AVPlayer *)startPlayerWithFileName:(NSString *)fileName
+//{
+//    // 2. 从字典中取出播放Item
+//    AVPlayerItem *item = _itemList[fileName];
+//    // 3. 判断播放器是否为空
+//    if (item == nil) {
+//        // 4. 生成对应音乐资源
+//        NSURL *fileUrl = [[NSBundle mainBundle] URLForResource:fileName withExtension:nil];
+//        if (fileUrl == nil) return nil;
+//        // 5. 创建对应的播放器
+//        item = [[AVPlayerItem alloc] initWithURL:fileUrl];
+//        // 6. 保存到字典中
+//        [_itemList setObject:item forKey:fileName];
+//    }
+//    // . 开始播放
+//    [_player replaceCurrentItemWithPlayerItem:item];
+//    //_player.currentTime
+//    //
+//    //[[AVPlayer playerWithPlayerItem:nil] play];
+//    return _player;
+//}
+//// 暂停播放音乐
+//+ (void)pausePlayer
+//{
+//    [_player pause];
+//}
+//// 停止播放音乐
+//+ (void)stopPlayer
+//{
+//    [_player pause];
+//}
 
+#pragma mark - AVAudioPlayer 使用方法
 + (AVAudioPlayer *)playMusicWithFileName:(NSString *)fileName
 {
     // 1. 创建空的播放器
@@ -70,7 +105,7 @@ static NSMutableDictionary *_players;
     }
 }
 
-// 播放音效
+#pragma mark - 播放音效
 + (void)playSoundWithSoundName:(NSString *)soundName
 {
     // 1. 创建SoundID = 0
