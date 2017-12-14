@@ -58,6 +58,13 @@
 		66F8C1281FE0BEDA008FBBF6 /* WDMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C1271FE0BEDA008FBBF6 /* WDMusic.m */; };
 		66F8C12B1FE0BF29008FBBF6 /* WDLrcLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C12A1FE0BF29008FBBF6 /* WDLrcLine.m */; };
 		66F8C12E1FE0C35C008FBBF6 /* WDAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C12D1FE0C35C008FBBF6 /* WDAudioTool.m */; };
+		66F8C1311FE1004E008FBBF6 /* WDMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C1301FE1004E008FBBF6 /* WDMusicTool.m */; };
+		66F8C1341FE10064008FBBF6 /* WDLrcTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C1331FE10064008FBBF6 /* WDLrcTool.m */; };
+		66F8C1371FE11CF3008FBBF6 /* CALayer+WDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C1361FE11CF3008FBBF6 /* CALayer+WDExtension.m */; };
+		66F8C13A1FE11DCD008FBBF6 /* NSString+WDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C1391FE11DCD008FBBF6 /* NSString+WDExtension.m */; };
+		66F8C13E1FE22208008FBBF6 /* WDLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C13D1FE22208008FBBF6 /* WDLrcCell.m */; };
+		66F8C1411FE22300008FBBF6 /* WDLrcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C1401FE22300008FBBF6 /* WDLrcView.m */; };
+		66F8C1441FE23F86008FBBF6 /* WDLrcLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F8C1431FE23F86008FBBF6 /* WDLrcLabel.m */; };
 		D018124C1BC4638A8297F406 /* Pods_wd_audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CE9FEA44BA0238D18478AE /* Pods_wd_audio.framework */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +128,21 @@
 		66F8C12A1FE0BF29008FBBF6 /* WDLrcLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDLrcLine.m; sourceTree = "<group>"; };
 		66F8C12C1FE0C35C008FBBF6 /* WDAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDAudioTool.h; sourceTree = "<group>"; };
 		66F8C12D1FE0C35C008FBBF6 /* WDAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDAudioTool.m; sourceTree = "<group>"; };
+		66F8C12F1FE1004E008FBBF6 /* WDMusicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDMusicTool.h; sourceTree = "<group>"; };
+		66F8C1301FE1004E008FBBF6 /* WDMusicTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDMusicTool.m; sourceTree = "<group>"; };
+		66F8C1321FE10064008FBBF6 /* WDLrcTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDLrcTool.h; sourceTree = "<group>"; };
+		66F8C1331FE10064008FBBF6 /* WDLrcTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDLrcTool.m; sourceTree = "<group>"; };
+		66F8C1351FE11CF3008FBBF6 /* CALayer+WDExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+WDExtension.h"; sourceTree = "<group>"; };
+		66F8C1361FE11CF3008FBBF6 /* CALayer+WDExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+WDExtension.m"; sourceTree = "<group>"; };
+		66F8C1381FE11DCD008FBBF6 /* NSString+WDExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WDExtension.h"; sourceTree = "<group>"; };
+		66F8C1391FE11DCD008FBBF6 /* NSString+WDExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WDExtension.m"; sourceTree = "<group>"; };
+		66F8C13B1FE11E24008FBBF6 /* Global.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.pch; sourceTree = "<group>"; };
+		66F8C13C1FE22208008FBBF6 /* WDLrcCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDLrcCell.h; sourceTree = "<group>"; };
+		66F8C13D1FE22208008FBBF6 /* WDLrcCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDLrcCell.m; sourceTree = "<group>"; };
+		66F8C13F1FE22300008FBBF6 /* WDLrcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDLrcView.h; sourceTree = "<group>"; };
+		66F8C1401FE22300008FBBF6 /* WDLrcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDLrcView.m; sourceTree = "<group>"; };
+		66F8C1421FE23F86008FBBF6 /* WDLrcLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDLrcLabel.h; sourceTree = "<group>"; };
+		66F8C1431FE23F86008FBBF6 /* WDLrcLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDLrcLabel.m; sourceTree = "<group>"; };
 		74CE9FEA44BA0238D18478AE /* Pods_wd_audio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wd_audio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0FE0FE4DCB3FC56D03D805 /* Pods-wd-audio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wd-audio.release.xcconfig"; path = "Pods/Target Support Files/Pods-wd-audio/Pods-wd-audio.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +219,7 @@
 				66F8C1251FE0BC58008FBBF6 /* Category */,
 				66F8C0971FE0B90C008FBBF6 /* AppDelegate.h */,
 				66F8C0981FE0B90C008FBBF6 /* AppDelegate.m */,
+				66F8C13B1FE11E24008FBBF6 /* Global.pch */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -204,6 +227,12 @@
 		66F8C0CB1FE0BA53008FBBF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				66F8C13F1FE22300008FBBF6 /* WDLrcView.h */,
+				66F8C1401FE22300008FBBF6 /* WDLrcView.m */,
+				66F8C13C1FE22208008FBBF6 /* WDLrcCell.h */,
+				66F8C13D1FE22208008FBBF6 /* WDLrcCell.m */,
+				66F8C1421FE23F86008FBBF6 /* WDLrcLabel.h */,
+				66F8C1431FE23F86008FBBF6 /* WDLrcLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,6 +253,10 @@
 			children = (
 				66F8C12C1FE0C35C008FBBF6 /* WDAudioTool.h */,
 				66F8C12D1FE0C35C008FBBF6 /* WDAudioTool.m */,
+				66F8C12F1FE1004E008FBBF6 /* WDMusicTool.h */,
+				66F8C1301FE1004E008FBBF6 /* WDMusicTool.m */,
+				66F8C1321FE10064008FBBF6 /* WDLrcTool.h */,
+				66F8C1331FE10064008FBBF6 /* WDLrcTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -312,6 +345,10 @@
 		66F8C1251FE0BC58008FBBF6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				66F8C1351FE11CF3008FBBF6 /* CALayer+WDExtension.h */,
+				66F8C1361FE11CF3008FBBF6 /* CALayer+WDExtension.m */,
+				66F8C1381FE11DCD008FBBF6 /* NSString+WDExtension.h */,
+				66F8C1391FE11DCD008FBBF6 /* NSString+WDExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -505,7 +542,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				66F8C12E1FE0C35C008FBBF6 /* WDAudioTool.m in Sources */,
+				66F8C1441FE23F86008FBBF6 /* WDLrcLabel.m in Sources */,
 				66F8C12B1FE0BF29008FBBF6 /* WDLrcLine.m in Sources */,
+				66F8C1311FE1004E008FBBF6 /* WDMusicTool.m in Sources */,
+				66F8C1341FE10064008FBBF6 /* WDLrcTool.m in Sources */,
+				66F8C1371FE11CF3008FBBF6 /* CALayer+WDExtension.m in Sources */,
+				66F8C13A1FE11DCD008FBBF6 /* NSString+WDExtension.m in Sources */,
+				66F8C1411FE22300008FBBF6 /* WDLrcView.m in Sources */,
+				66F8C13E1FE22208008FBBF6 /* WDLrcCell.m in Sources */,
 				66F8C09C1FE0B90C008FBBF6 /* ViewController.m in Sources */,
 				66F8C0991FE0B90C008FBBF6 /* AppDelegate.m in Sources */,
 				66F8C0AA1FE0B90C008FBBF6 /* main.m in Sources */,
@@ -645,6 +689,7 @@
 			baseConfigurationReference = 1577BA587103059A657D92CC /* Pods-wd-audio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AWTS62H8S;
 				INFOPLIST_FILE = "wd-audio/Supportings/Info.plist";
@@ -660,6 +705,7 @@
 			baseConfigurationReference = BA0FE0FE4DCB3FC56D03D805 /* Pods-wd-audio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AWTS62H8S;
 				INFOPLIST_FILE = "wd-audio/Supportings/Info.plist";

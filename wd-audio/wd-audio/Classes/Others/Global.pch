@@ -1,0 +1,17 @@
+//
+//  Global.pch
+//  wd-audio
+//
+//  Created by WangDongya on 2017/12/13.
+//  Copyright © 2017年 example. All rights reserved.
+//
+
+#ifndef Global_pch
+#define Global_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#endif /* Global_pch */

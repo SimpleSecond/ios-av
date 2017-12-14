@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 1.获取音频会话
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    
+    // 2.设置为后台类型
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    // 3.激活会话
+    [session setActive:YES error:nil];
     
     return YES;
 }
@@ -28,18 +37,21 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    NSLog(@"%s",__func__);
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"iconViewAnimate"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    NSLog(@"%s",__func__);
 }
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"iconViewAnimate"] ) return;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"XMGIconViewNotification" object:nil];
 }
 
 
