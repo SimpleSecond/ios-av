@@ -307,15 +307,15 @@
     switch (event.subtype) {
         case UIEventSubtypeRemoteControlPlay:
         case UIEventSubtypeRemoteControlPause:
-            [self playOrPause];
+            [self playPauseMusic:nil];
             break;
             
         case UIEventSubtypeRemoteControlNextTrack:
-            [self next];
+            [self nextMusic:nil];
             break;
             
         case UIEventSubtypeRemoteControlPreviousTrack:
-            [self previous];
+            [self previousMusic:nil];
             break;
             
         default:
